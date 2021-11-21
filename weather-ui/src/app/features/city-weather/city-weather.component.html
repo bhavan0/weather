@@ -1,95 +1,93 @@
 <div *ngIf="loaded">
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Id">City ID</label>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Id">City ID</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label" for="Id">{{ city.id }}</label>
+        </div>
     </div>
 
-    <div class="col-6">
-      <label class="form-label" for="Id">{{ city.id }}</label>
-    </div>
-  </div>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Name">City Name</label>
+        </div>
 
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Name">City Name</label>
-    </div>
-
-    <div class="col-6">
-      <label class="form-label" for="Name">{{ city.name }}</label>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="WeatherDescription"
-        >Weather Description</label
-      >
+        <div class="col-6">
+            <label class="form-label" for="Name">{{ city.name }}</label>
+        </div>
     </div>
 
-    <div class="col-6">
-      <label class="form-label" for="WeatherDescription">{{
-        weather.description
-      }}</label>
-    </div>
-  </div>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="WeatherDescription">Weather Description</label>
+        </div>
 
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="FeelsLike">Feels Like</label>
-    </div>
-
-    <div class="col-6">
-      <label class="form-label" for="FeelsLike">{{ weather.feelsLike }}</label>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Humidity">Humidity</label>
+        <div class="col-6">
+            <label class="form-label" for="WeatherDescription">{{
+                weather.description
+                }}</label>
+        </div>
     </div>
 
-    <div class="col-6">
-      <label class="form-label" for="Humidity">{{ weather.humidity }}</label>
-    </div>
-  </div>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="FeelsLike">Feels Like</label>
+        </div>
 
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Temperature">Temperature</label>
-    </div>
-
-    <div class="col-6">
-      <label class="form-label" for="Temperature">{{ weather.temp }}</label>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Min">Min</label>
+        <div class="col-6">
+            <label class="form-label" for="FeelsLike">{{ weather.feelsLike }}</label>
+        </div>
     </div>
 
-    <div class="col-6">
-      <label class="form-label" for="Min">{{ weather.min }}</label>
-    </div>
-  </div>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Humidity">Humidity</label>
+        </div>
 
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Max">Max</label>
-    </div>
-
-    <div class="col-6">
-      <label class="form-label" for="Max">{{ weather.max }}</label>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">
-      <label class="form-label" for="Pressure">Pressure</label>
+        <div class="col-6">
+            <label class="form-label" for="Humidity">{{ weather.humidity }}</label>
+        </div>
     </div>
 
-    <div class="col-6">
-      <label class="form-label" for="Pressure">{{ weather.pressure }}</label>
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Temperature">Temperature</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label" for="Temperature">{{ weather.temp }}</label>
+        </div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Min">Min</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label" for="Min">{{ weather.min }}</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Max">Max</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label" for="Max">{{ weather.max }}</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label class="form-label" for="Pressure">Pressure</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label" for="Pressure">{{ weather.pressure }}</label>
+        </div>
+    </div>
 </div>

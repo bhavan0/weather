@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - '27017:27017'
+    networks:
+      - webnet
+  backend:
+    build: ./weather-backend/
+    image: backend
+    container_name: backend
+    restart: always
+    ports:
+      - 6005:6005
+    links:
+      - mongodb
+    networks:
+      - webnet
+  client:
+    build: './weather-ui'
+    image: client
+    container_name: client
+    restart: always
+    ports:
+      - 8080:8080
+    expose:
+      - "8080"
+
+networks:
+  webnet: 
+    driver: bridge
